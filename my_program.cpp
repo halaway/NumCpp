@@ -1,8 +1,13 @@
-#include <iostream>
 #include "NumCpp.hpp"
+#include <iostream>
+#include <vector>
+#include <cmath>
+
 
 //g++ -std=c++17 my_program.cpp -o my_program
 //using namespace nc_develop;
+
+const double pi = 3.14;
 
 int main(){
 
@@ -11,6 +16,8 @@ int main(){
     nc::NdArray<double> b = {{4, 5, 6}};
 
     nc::NdArray<double> c = {{7, 8, 9}};
+
+  
 
     //nc::NdArray<double> d = nc::concatenate({c, c}, nc::Axis::ROW);
 
@@ -63,9 +70,9 @@ int main(){
         {7, 8, 9} 
     };
 
-    for (int i : array2d ){
-        std::cout<<i<<std::endl;
-    }
+    // for (int i : array2d ){
+    //     std::cout<<i<<std::endl;
+    // }
    
     // utils::printContainer(array3d);
 
